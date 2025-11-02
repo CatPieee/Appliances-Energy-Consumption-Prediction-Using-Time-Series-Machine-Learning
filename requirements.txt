@@ -2,9 +2,9 @@ numpy
 pandas
 seaborn
 matplotlib
-prophet
 scikit-learn
 xgboost
+prophet
 statsmodels
-tensorflow
-keras
+pytorch
+shap

@@ -114,7 +114,7 @@ All models are evaluated using the following metrics:
 
 ### 1. Requirements
 ```bash
-Python 3.8+
+Python 3.9.6
 ```
 
 ### 2. Install Dependencies
