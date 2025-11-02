@@ -43,7 +43,8 @@ Dua, D. and Graff, C. (2019). UCI Machine Learning Repository [http://archive.ic
 │   ├── 4.1-TimeSeries_DL_LSTM.ipynb               # LSTM Deep Learning
 │   ├── 4.1-TimeSeries_DL_RNN.ipynb                  # RNN Deep Learning
 │   ├── 4.1-TimeSeries_DL_Transformer.ipynb        # Transformer Deep Learning
-│   └── 5.0-Visualisation.ipynb                     # Results Visualisation
+│   ├── 5.0-Visualisation.ipynb                     # Results Visualisation
+│   └── 6.0-Shapley_Explanation.ipynb              # SHAP Explainable AI
 ├── results/                        # Result files
 │   ├── eda_plots/                     # EDA visualization plots
 │   ├── prediction_plots/              # Model prediction plots
@@ -56,7 +57,11 @@ Dua, D. and Graff, C. (2019). UCI Machine Learning Repository [http://archive.ic
 │   ├── lstm_predictions.csv            # LSTM model predictions
 │   ├── rnn_predictions.csv             # RNN model predictions
 │   ├── transformer_predictions.csv     # Transformer model predictions
-│   └── timeseries_model_results.csv   # Model performance comparison
+│   ├── timeseries_model_results.csv   # Model performance comparison
+│   └── shap_explanation/              # SHAP explainability results
+│       ├── shap_beeswarm.png          # Overall feature importance (beeswarm plot)
+│       ├── shap_waterfall_0.png       # Individual prediction explanation (sample 0)
+│       └── shap_waterfall_100.png     # Individual prediction explanation (sample 100)
 ├── requirements.txt                # Dependencies
 └── README.md                      # Project documentation
 ```
@@ -101,6 +106,12 @@ Dua, D. and Graff, C. (2019). UCI Machine Learning Repository [http://archive.ic
 - **Prediction Results Visualization**: Time series plots showing actual vs predicted values
 - **Feature Ablation Study Results**: Impact analysis of different feature groups on model performance
 
+### 7. SHAP Explainable AI
+- **Model Prediction Interpretability Analysis**: Understanding how models make predictions
+- **Feature Importance Ranking**: Identifying most influential features for energy consumption prediction
+- **Individual Prediction Explanation**: Waterfall plots showing feature contributions for specific predictions
+- **Overall Feature Impact Analysis**: Beeswarm plots visualizing feature importance distribution across all predictions
+
 
 ## Model Performance Evaluation
 
@@ -131,18 +142,4 @@ Execute the notebooks in the following order:
 5. `4.0-TimeSeries_ML.ipynb` - Time series machine learning (Prophet & SARIMA)
 6. `4.1-TimeSeries_DL_*.ipynb` - Deep learning models (RNN, LSTM, Transformer)
 7. `5.0-Visualisation.ipynb` - Prediction results and metrics visualisation
-
-## Results
-
-- `results/eda_plots/`: EDA analysis plots
-- `results/prediction_plots/`: Model prediction result plots
-- `results/ablation_study/`: Feature ablation study results
-  - `ML_metrics.csv`: Traditional ML model performance metrics
-  - `ML_metrics_ablation.csv`: ML model metrics with feature ablation
-- `results/ML_predictions.csv`: Traditional ML model predictions
-- `results/SARIMA_predictions.csv`: SARIMA model predictions
-- `results/prophet_predictions.csv`: Prophet model predictions
-- `results/lstm_predictions.csv`: LSTM model predictions
-- `results/rnn_predictions.csv`: RNN model predictions
-- `results/transformer_predictions.csv`: Transformer model predictions
-- `results/timeseries_model_results.csv`: Time series model performance comparison
+8. `6.0-Shapley_Explanation.ipynb` - SHAP model interpretability and feature importance analysis
