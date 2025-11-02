@@ -42,10 +42,17 @@ Dua, D. and Graff, C. (2019). UCI Machine Learning Repository [http://archive.ic
 │   ├── 4.0-TimeSeries_ML.ipynb                    # Time Series Machine Learning
 │   ├── 4.1-TimeSeries_DL_LSTM.ipynb               # LSTM Deep Learning
 │   ├── 4.1-TimeSeries_DL_RNN.ipynb                  # RNN Deep Learning
-│   └── 4.1-TimeSeries_DL_Transformer.ipynb        # Transformer Deep Learning
+│   ├── 4.1-TimeSeries_DL_Transformer.ipynb        # Transformer Deep Learning
+│   └── 5.0-Visualisation.ipynb                     # Results Visualisation
 ├── results/                        # Result files
 │   ├── eda_plots/                     # EDA visualization plots
 │   ├── prediction_plots/              # Model prediction plots
+│   ├── ablation_study/                  # Feature ablation study results
+│   │   ├── ML_metrics.csv              # ML model metrics comparison
+│   │   └── ML_metrics_ablation.csv     # ML model metrics with feature ablation
+│   ├── ML_predictions.csv              # Traditional ML model predictions
+│   ├── SARIMA_predictions.csv          # SARIMA model predictions
+│   ├── prophet_predictions.csv         # Prophet model predictions
 │   ├── lstm_predictions.csv            # LSTM model predictions
 │   ├── rnn_predictions.csv             # RNN model predictions
 │   ├── transformer_predictions.csv     # Transformer model predictions
@@ -69,11 +76,11 @@ Dua, D. and Graff, C. (2019). UCI Machine Learning Repository [http://archive.ic
 - Rolling statistics features
 
 ### 3. Traditional Machine Learning Models
-- Linear Regression
+- Linear Regression (As a basic model, not show in final result)
 - Random Forest
 - XGBoost
-- Support Vector Machine (SVM)
-- Multi-layer Perceptron (MLP)
+- Support Vector Regression
+- Multi-layer Perceptron
 
 ### 3.1 Feature Ablation Study
 - Systematic feature importance analysis
@@ -88,6 +95,12 @@ Dua, D. and Graff, C. (2019). UCI Machine Learning Repository [http://archive.ic
 - **RNN**: Recurrent Neural Network (`4.1-TimeSeries_DL_RNN.ipynb`)
 - **LSTM**: Long Short-Term Memory neural network (`4.1-TimeSeries_DL_LSTM.ipynb`)
 - **Transformer**: Attention-based time series forecasting model (`4.1-TimeSeries_DL_Transformer.ipynb`)
+
+### 6. Visualisation
+- **Model Performance Comparison**: Comprehensive comparison of all model performances
+- **Prediction Results Visualization**: Time series plots showing actual vs predicted values
+- **Feature Ablation Study Results**: Impact analysis of different feature groups on model performance
+
 
 ## Model Performance Evaluation
 
@@ -117,3 +130,19 @@ Execute the notebooks in the following order:
 4. `3.1-Traditional_ML_Feature_Abaltion.ipynb` - Feature ablation study
 5. `4.0-TimeSeries_ML.ipynb` - Time series machine learning (Prophet & SARIMA)
 6. `4.1-TimeSeries_DL_*.ipynb` - Deep learning models (RNN, LSTM, Transformer)
+7. `5.0-Visualisation.ipynb` - Prediction results and metrics visualisation
+
+## Results
+
+- `results/eda_plots/`: EDA analysis plots
+- `results/prediction_plots/`: Model prediction result plots
+- `results/ablation_study/`: Feature ablation study results
+  - `ML_metrics.csv`: Traditional ML model performance metrics
+  - `ML_metrics_ablation.csv`: ML model metrics with feature ablation
+- `results/ML_predictions.csv`: Traditional ML model predictions
+- `results/SARIMA_predictions.csv`: SARIMA model predictions
+- `results/prophet_predictions.csv`: Prophet model predictions
+- `results/lstm_predictions.csv`: LSTM model predictions
+- `results/rnn_predictions.csv`: RNN model predictions
+- `results/transformer_predictions.csv`: Transformer model predictions
+- `results/timeseries_model_results.csv`: Time series model performance comparison
