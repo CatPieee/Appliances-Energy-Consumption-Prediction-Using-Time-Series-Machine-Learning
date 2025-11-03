@@ -1,4 +1,4 @@
-# Appliances Energy Consumption Forecasting Using Time Series Machine Learning
+# Appliances Energy Consumption Prediction Using Time Series Machine Learning
 
 ## Project Overview
 
@@ -59,9 +59,6 @@ Dua, D. and Graff, C. (2019). UCI Machine Learning Repository [http://archive.ic
 │   ├── transformer_predictions.csv     # Transformer model predictions
 │   ├── timeseries_model_results.csv   # Model performance comparison
 │   └── shap_explanation/              # SHAP explainability results
-│       ├── shap_beeswarm.png          # Overall feature importance (beeswarm plot)
-│       ├── shap_waterfall_0.png       # Individual prediction explanation (sample 0)
-│       └── shap_waterfall_100.png     # Individual prediction explanation (sample 100)
 ├── requirements.txt                # Dependencies
 └── README.md                      # Project documentation
 ```
