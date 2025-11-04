@@ -52,7 +52,7 @@ Dua, D. and Graff, C. (2019). UCI Machine Learning Repository [http://archive.ic
 │   │   ├── ML_metrics.csv              # ML model metrics comparison
 │   │   └── ML_metrics_ablation.csv     # ML model metrics with feature ablation
 │   ├── ML_predictions.csv              # Traditional ML model predictions
-│   ├── SARIMA_predictions.csv          # SARIMA model predictions
+│   ├── ARIMA_predictions.csv          # ARIMA model predictions
 │   ├── prophet_predictions.csv         # Prophet model predictions
 │   ├── lstm_predictions.csv            # LSTM model predictions
 │   ├── rnn_predictions.csv             # RNN model predictions
@@ -91,7 +91,7 @@ Dua, D. and Graff, C. (2019). UCI Machine Learning Repository [http://archive.ic
 
 ### 4. Time Series Machine Learning Models
 - **Prophet**: Facebook's time series forecasting tool
-- **SARIMA**: Seasonal Autoregressive Integrated Moving Average model
+- **ARIMA**: Seasonal Autoregressive Integrated Moving Average model
 
 ### 5. Deep Learning Models
 - **RNN**: Recurrent Neural Network (`4.1-TimeSeries_DL_RNN.ipynb`)
@@ -136,7 +136,7 @@ Execute the notebooks in the following order:
 2. `2.0-Feature_Engineering.ipynb` - Feature engineering
 3. `3.0-Traditional_ML.ipynb` - Traditional machine learning
 4. `3.1-Traditional_ML_Feature_Abaltion.ipynb` - Feature ablation study
-5. `4.0-TimeSeries_ML.ipynb` - Time series machine learning (Prophet & SARIMA)
+5. `4.0-TimeSeries_ML.ipynb` - Time series machine learning (Prophet & ARIMA)
 6. `4.1-TimeSeries_DL_*.ipynb` - Deep learning models (RNN, LSTM, Transformer)
 7. `5.0-Visualisation.ipynb` - Prediction results and metrics visualisation
 8. `6.0-Shapley_Explanation.ipynb` - SHAP model interpretability and feature importance analysis
