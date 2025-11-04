@@ -103,7 +103,7 @@ Dua, D. and Graff, C. (2019). UCI Machine Learning Repository [http://archive.ic
 - **Prediction Results Visualization**: Time series plots showing actual vs predicted values
 - **Feature Ablation Study Results**: Impact analysis of different feature groups on model performance
 
-### 7. SHAP Explainable AI
+### 7. SHAP Explainable
 - **Model Prediction Interpretability Analysis**: Understanding how models make predictions
 - **Feature Importance Ranking**: Identifying most influential features for energy consumption prediction
 - **Individual Prediction Explanation**: Waterfall plots showing feature contributions for specific predictions
